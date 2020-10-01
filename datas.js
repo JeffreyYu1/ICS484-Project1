@@ -405,7 +405,7 @@ var trace1 = {
   textposition: 'auto',
   hoverinfo: 'none',
   opacity: 0.5,
-  name: 'Male Poplution',
+  name: 'Male Population',
   marker: {
     color: 'rgb(158,202,225)',
     line: {
@@ -422,7 +422,7 @@ var trace2 = {
   text: yValue2.map(String),
   textposition: 'auto',
   hoverinfo: 'none',
-    name: 'Female Poplution',
+    name: 'Female Population',
   marker: {
     color: 'rgba(58,200,225,.5)',
     line: {
@@ -435,7 +435,7 @@ var trace2 = {
 var data = [trace1,trace2];
 
 var layout2 = {
-  title: 'Men VS Women Popultion',
+  title: 'Men VS Women Population',
   xaxis: {
   title: 'Ages'
   },
