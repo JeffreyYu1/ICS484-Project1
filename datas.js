@@ -102,7 +102,9 @@ trace1 = {
   name: '# of Deaths per day',
   line: {
     color: 'rgb(219, 64, 82)',
-    width: 3
+    width: 3,
+    dash: 'dot'
+
   }
 };
 
@@ -159,7 +161,8 @@ trace2 = {
   name: '# of Attacks Per Day',
   line: {
     color: 'rgb(55, 128, 191)',
-    width: 3
+    width: 3,
+    dash: 'dot'
   }
 };
 
@@ -523,8 +526,8 @@ Plotly.d3.csv('choleraDeathLocations.csv', function (data1) {
 
       var div = L.DomUtil.create('div', 'legend');
       div.innerHTML += "<h4>Legend</h4>";
-      div.innerHTML += '<i style="background: red"></i><span>Death Location</span><br>';
-      div.innerHTML += '<i style="background: #2A81CB"></i><span>Pump Location</span><br>';
+      div.innerHTML += '<img src="download.jpg" width="15" height="15"><span> Death Location</span><br>';
+      div.innerHTML += '<img src="marker.png" width="15" height="15"><span> Pump Location</span><br>';
       return div;
     };
 
