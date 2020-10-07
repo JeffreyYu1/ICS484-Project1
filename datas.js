@@ -491,8 +491,8 @@ Plotly.d3.csv('choleraDeathLocations.csv', function (data1) {
     }
 
 
-    var mymap = L.map('mapid').setView([51.5135, -0.136], 17);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+    var mymap = L.map('mapid').setView([51.5135, -0.136], 16);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 18,
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
           '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -527,7 +527,7 @@ Plotly.d3.csv('choleraDeathLocations.csv', function (data1) {
       var div = L.DomUtil.create('div', 'legend');
       div.innerHTML += "<h4>Legend</h4>";
       div.innerHTML += '<img src="download.jpg" width="15" height="15"><span> Death Location</span><br>';
-      div.innerHTML += '<img src="marker.png" width="15" height="15"><span> Pump Location</span><br>';
+      div.innerHTML += '<img src="marker.png" width="15" height="15"><span>Pump Location</span><br>';
       return div;
     };
 
