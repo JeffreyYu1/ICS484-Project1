@@ -364,7 +364,7 @@ var data = [{
 }]
 
 var layout4 = {
-  title: "1851 UK Census Data Table"
+  title: "1854 UK Census Data Table"
 }
 
 Plotly.newPlot('table3', data, layout4);
