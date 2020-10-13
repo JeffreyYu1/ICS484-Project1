@@ -15,9 +15,41 @@
     </script>
 </head>
 <body>
- <div id="thevizcolumn" style="width:100%; height:850px; float: left;">
-     <center><h2>London Cholera Outbreak 1854</h2></center>
-     <hr size="5" noshade>
+
+
+
+<div id="theheadcolumn" style="width:100%; height:100px; float: left;">
+        <center><button id="myBtn">Page Info</button></center>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <center><h1>Author: Jeffrey Yu</h1></center>
+                <center><h3>Contact:
+                    <a href="https://www.linkedin.com/in/jeffreyyu-81714b178/">LinkedIn</a>
+                    <a href="https://github.com/JeffreyYu1">GitHub</a>
+                </h3></center>
+                <center><h3>Libraries Used:
+                    <a href="https://plotly.com/">Plot.ly</a>
+                    <a href="https://d3js.org/">D3.js</a>
+                    <a href="https://leafletjs.com/">Leaflet</a>
+                </h3></center>
+                <center><h3>The purpose of this page is to show the data on the
+                    outbreak of Cholera in London in 1854. The data was made by Robert Wilson
+                    which was based on John Snow's analysis on Cholera.</h3></center>
+            </div>
+
+        </div>
+
+    <center><h2>London Cholera Outbreak 1854</h2></center>
+
+</div>
+
+<hr size="5" noshade>
+
+ <div id="thevizcolumn" style="width:100%; height:800px; float: left;">
        <div class="float-child" style="width:40%; height:500px; float: left">
            <div id="table1" style="width:100%;height:500px;" >
                <p>The table above shows the dates with how many attacks on that date, how many deaths on that
@@ -34,9 +66,10 @@
     </div>
 
  </div>
- <hr size="5" noshade>
 
- <div id="column2" style="width:100%; height:550px; float: left;">
+<hr size="5" noshade>
+
+ <div id="column2" style="width:100%; height:600px; float: left;">
      <div class="float-child" style="width:40%; height:500px; float: left">
          <div id="table2" style="width:100%;height:370px;" >
              <p>The table above shows how deaths were related to each gender and is grouped by age ranges. For every
@@ -68,9 +101,9 @@
         <div id="plot4" style="width:50%;height:500px;" ></div>
     </div>
 </div>
- <div id="column4" style="width:100%; height:500px; float: left;">
-     <div class="float-child" style="width:40%; height:500px; float: left">
-         <div id="plot5" style="width:100%;height:300px;" >
+ <div id="column4" style="width:100%; height:700px; float: left;">
+     <div class="float-child" style="width:40%; height:600px; float: left">
+         <div id="plot5" style="width:100%;height:550px;" >
              <p>The bar graph above shows the population of males compared to females and they are grouped by
              ages. The pie chart to the right is showing the same data but in a different chart. Readers can
              conclude from the data that there were more females than males when the age group is above 19.</p>
@@ -79,31 +112,7 @@
      <div class="float-child" style="width:25%; height:500px; float: left">
          <div id="plot6" style="width:50%;height:500px;" ></div>
      </div>
-     <div class="float-child" style="width:25%; height:600px; float: left">
-         <center><button id="myBtn">Page Info</button></center>
-         <!-- The Modal -->
-         <div id="myModal" class="modal">
 
-             <!-- Modal content -->
-             <div class="modal-content">
-                 <span class="close">&times;</span>
-                 <center><h1>Author: Jeffrey Yu</h1></center>
-                 <center><h3>Contact:
-                     <a href="https://www.linkedin.com/in/jeffreyyu-81714b178/">LinkedIn</a>
-                      <a href="https://github.com/JeffreyYu1">GitHub</a>
-                 </h3></center>
-                 <center><h3>Libraries Used:
-                     <a href="https://plotly.com/">Plot.ly</a>
-                     <a href="https://d3js.org/">D3.js</a>
-                     <a href="https://leafletjs.com/">Leaflet</a>
-                 </h3></center>
-                 <center><h3>The purpose of this page is to show the data on the
-                 outbreak of Cholera in London in 1854. The data was made by Robert Wilson
-                 which was based on John Snow's analysis on Cholera.</h3></center>
-             </div>
-
-         </div>
-     </div>
 
 
  </div>

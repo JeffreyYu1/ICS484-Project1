@@ -101,7 +101,7 @@ trace1 = {
   mode: 'lines',
   name: '# of Deaths per day',
   line: {
-    color: 'rgb(219, 64, 82)',
+    color: 'rgb(77,106,255)',
     width: 3,
     dash: 'dot'
 
@@ -160,7 +160,7 @@ trace2 = {
   mode: 'lines',
   name: '# of Attacks Per Day',
   line: {
-    color: 'rgb(55, 128, 191)',
+    color: 'rgb(255,165,0)',
     width: 3,
     dash: 'dot'
   }
@@ -195,7 +195,7 @@ trace4 = {
   mode: 'lines',
   name: 'Total Deaths To Date',
   line: {
-    color: 'rgb(255, 255, 0)',
+    color: 'rgb(77,106,255)',
     width: 3
   }
 };
@@ -274,13 +274,10 @@ var trace1 = {
   x: xValue,
   y: yValue,
   type: 'bar',
-  text: yValue.map(String),
-  textposition: 'auto',
-  hoverinfo: 'none',
-  opacity: 0.5,
+  text: yValue,
   name: '# of Male Deaths by Age',
   marker: {
-    color: 'rgb(158,202,225)',
+    color: 'rgb(191,179,255)',
     line: {
       color: 'rgb(8,48,107)',
       width: 1.5
@@ -292,9 +289,7 @@ var trace2 = {
   x: xValue,
   y: yValue2,
   type: 'bar',
-  text: yValue2.map(String),
-  textposition: 'auto',
-  hoverinfo: 'none',
+  text: yValue2,
     name: '# of Female Deaths by Age',
   marker: {
     color: 'rgba(58,200,225,.5)',
@@ -370,29 +365,45 @@ var layout4 = {
 Plotly.newPlot('table3', data, layout4);
 });
 
+var maleColors = [
+   ['rgb(102,25,255)','rgb(119,51,255)','rgb(136,77,255)','rgb(153,102,255)','rgb(170,128,255)','rgb(187,153,255)',
+    'rgb(204,179,255)','rgb(221,204,255)','rgb(238,230,255)']
+];
+
 var data = [{
   values: [2075391,1711664,1395091,1073914,810979,560534,351893,166194,40772],
   labels: ['0-9','10-19','20-29','30-39','40-49','50-59','60-69','70-79','80+'],
+  marker: {
+     colors: maleColors[0]
+    },
   type: 'pie'
 }];
 
 var layout5 = {
-  height: 300,
-  width: 400,
+  height: 400,
+  width: 500,
   title: "UK Census Male Pie Chart"
 };
 
 Plotly.newPlot('plot3', data, layout5);
 
+var femaleColors = [
+   ['rgb(25,178,255)','rgb(51,187,255)','rgb(77,195,255)','rgb(102,204,255)','rgb(128,212,255)','rgb(153,221,255)',
+    'rgb(179,229,255)','rgb(204,238,255)','rgb(230,247,255)']
+];
+
 var data = [{
   values: [2065096,1711627,1542876,1140383,845260,592970,399019,199326,55704],
   labels: ['0-9','10-19','20-29','30-39','40-49','50-59','60-69','70-79','80+'],
+  marker: {
+   colors: femaleColors[0]
+  },
   type: 'pie'
 }];
 
 var layout6 = {
-  height: 300,
-  width: 400,
+  height: 400,
+  width: 500,
   title: "UK Census Female Pie Chart"
 };
 
@@ -407,13 +418,10 @@ var trace1 = {
   x: xValue,
   y: yValue,
   type: 'bar',
-  text: yValue.map(String),
-  textposition: 'auto',
-  hoverinfo: 'none',
-  opacity: 0.5,
+  text: yValue,
   name: 'Male Population',
   marker: {
-    color: 'rgb(158,202,225)',
+    color: 'rgb(191,179,255)',
     line: {
       color: 'rgb(8,48,107)',
       width: 1.5
@@ -425,9 +433,7 @@ var trace2 = {
   x: xValue,
   y: yValue2,
   type: 'bar',
-  text: yValue2.map(String),
-  textposition: 'auto',
-  hoverinfo: 'none',
+  text: yValue2,
     name: 'Female Population',
   marker: {
     color: 'rgba(58,200,225,.5)',
@@ -452,15 +458,26 @@ var layout2 = {
 
 Plotly.newPlot('plot5', data, layout2);
 
+var colors1 = [
+  ['rgb(191,179,255)','rgba(58,200,225,.5)']
+];
+
 var data = [{
   values: [8186432,8552261],
   labels: ['male','female'],
+  marker: {
+   colors: colors1[0],
+   line: {
+         color: 'rgb(8,48,107)',
+         width: 1
+       }
+  },
   type: 'pie'
 }];
 
 var layout5 = {
-  height: 300,
-  width: 400,
+  height: 400,
+  width: 500,
   title: "UK Census Male VS Female Pie Chart"
 };
 
