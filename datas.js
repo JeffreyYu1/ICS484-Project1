@@ -35,7 +35,7 @@ var data = [{
   },
   cells: {
     values: cellValues,
-    align: ["center", "center"],
+    align: ["center", "right"],
     line: {color: "black", width: 1},
     fill: {color: ['rgba(253,245,230, 0.65)','rgb(253,245,230)']},
     font: {family: "Arial", size: 11, color: ["black"]}
@@ -351,7 +351,7 @@ var data = [{
   },
   cells: {
     values: cellValues,
-    align: ["center", "center"],
+    align: ["center", "right"],
     line: {color: "black", width: 1},
     fill: {color: ['rgba(253,245,230, 0.65)','rgb(253,245,230)']},
     font: {family: "Arial", size: 11, color: ["black"]}
