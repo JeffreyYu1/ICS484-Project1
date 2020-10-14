@@ -240,7 +240,7 @@ Plotly.d3.csv('naplesCholeraAgeSexData.csv', function(err, rows){
 
 var data = [{
   type: 'table',
-  columnwidth: [500,150,150,300,300],
+  columnwidth: [200,150,150,300,300],
   columnorder: [0,1,2,3,4],
   header: {
     values: headerValues,
@@ -251,7 +251,7 @@ var data = [{
   },
   cells: {
     values: cellValues,
-    align: ["center", "center"],
+    align: ["center", "right"],
     line: {color: "black", width: 1},
     fill: {color: ['rgba(253,245,230, 0.65)','rgb(253,245,230)']},
     font: {family: "Arial", size: 11, color: ["black"]}
@@ -340,7 +340,7 @@ Plotly.d3.csv('UKcensus1851.csv', function(err, rows){
 
 var data = [{
   type: 'table',
-  columnwidth: [500,150,150,300,300],
+  columnwidth: [200,150,150,300,300],
   columnorder: [0,1,2,3,4],
   header: {
     values: headerValues,
